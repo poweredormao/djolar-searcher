@@ -1,12 +1,25 @@
 import { DjolarField } from "./djolar";
-import {
-  AxiosError,
-  AxiosInstance,
-  AxiosRequestConfig,
-  AxiosResponse,
-} from "axios";
-import WebStyleSearcherAdapter, { defaultWebSearchFunc } from "./adapter_web";
-import { GoMicroStyleSearcherAdapter, defaultGoMicroSearchFunc } from "./adapter_go_micro";
+import { defaultWebSearchFunc } from "./adapter_web";
+
+/**
+ * the AxiosError 
+ */
+type AxiosError = any
+
+/**
+ * the AxiosInstance
+ */
+type AxiosInstance = any
+
+/**
+ * the AxiosRequestConfig
+ */
+type AxiosRequestConfig = any
+
+/**
+ * the AxiosResponse
+ */
+type AxiosResponse = any
 
 export interface SearcherSortBy {
   name: string;
